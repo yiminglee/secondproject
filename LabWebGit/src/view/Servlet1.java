@@ -13,11 +13,13 @@ public class Servlet1 extends HttpServlet {
 			throws ServletException, IOException {
 		
 		int num = 100;
+		String x = "你好嗎";
 		long time = System.currentTimeMillis();
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<h3>Servlet1:"+time+"</h3>");
 		out.println("<h3>Servlet1:"+num+"</h3>");
+		out.println("<h3>Servlet1:"+x+"</h3>");
 		out.close();
 	}
 
