@@ -12,10 +12,12 @@ public class Servlet1 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
+		int num = 100;
 		long time = System.currentTimeMillis();
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<h3>Servlet1:"+time+"</h3>");
+		out.println("<h3>Servlet1:"+num+"</h3>");
 		out.close();
 	}
 
