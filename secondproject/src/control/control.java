@@ -102,7 +102,9 @@ public class control extends HttpServlet {
 			errorMessage.put("createdateeer", "此日期不存在");
 		}
 		String cmdname = request.getParameter("cmdname");
+		System.out.println(cmdname);
 		cmdname = new String(cmdname.getBytes("ISO-8859-1"), "UTF-8");
+		System.out.println(cmdname);
 		if(cmdname==null||cmdname.trim().length()==0) {
 			errorMessage.put("cmdnameerr", "請輸入公司名稱");
 		}
